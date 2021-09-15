@@ -11,7 +11,7 @@ export default function App() {
   const [news, setNews] = useState([])
 
   useEffect(() => {
-        fetch(`https://gnews.io/api/v4/search?q=${text}&lang=en&token=9301f4d91412403ed1d45475533b0062`)
+        fetch(`https://gnews.io/api/v4/search?q=${text}&lang=en&token=88deee6b0d631e3f0862ee827fed5510`)
         .then((res) => res.json())
         .then((json) => setNews(json.articles))
   },[text])
